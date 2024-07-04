@@ -6,14 +6,6 @@
     font-style: normal;
 }
 
-:root {
-    --main-orange: #d97652;
-    --main-navy: #263140;
-    --main-beige: #f2e9d8;
-    --color-black: #000000;
-    --color-white: #ffffff;
-}
-
 .sr-only {
     position: absolute;
     overflow: hidden;
@@ -23,6 +15,14 @@
     margin: -1px;
     border: 0;
     clip: rect(0, 0, 0, 0);
+}
+
+:root {
+    --main-orange: #d97652;
+    --main-navy: #263140;
+    --main-beige: #f2e9d8;
+    --color-black: #000000;
+    --color-white: #ffffff;
 }
 
 html {
@@ -155,7 +155,7 @@ footer > div {
     align-items: center;
 }
 
-/* text */
+/* all text */
 .main-h {
     padding-top: 19rem;
     width: 73.7rem;
@@ -212,7 +212,7 @@ footer > div {
     font-size: 1.4rem;
 }
 
-/* button */
+/* all button */
 [class$='btn'] {
     border-radius: 4rem;
     background-color: var(--main-orange);
@@ -249,7 +249,7 @@ footer > div {
     height: 5rem;
 }
 
-/* image */
+/* all image */
 img {
     object-fit: cover;
 }
