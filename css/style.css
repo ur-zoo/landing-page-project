@@ -232,6 +232,7 @@ footer > div {
 }
 .section-btn-top {
     position: fixed;
+    z-index: 1;
     right: 2.4rem;
     bottom: 18rem;
     width: 5rem;
