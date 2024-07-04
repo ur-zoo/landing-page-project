@@ -40,9 +40,8 @@ body {
 
 header,
 main,
-section,
 footer {
-    padding: 1vw 15vw;
+    padding: 0 15vw;
 }
 
 /* header */
@@ -65,8 +64,9 @@ main {
 /* main */
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 12.8rem;
 }
 
 main article {
@@ -82,6 +82,8 @@ main div {
 section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 12rem;
 }
 
@@ -89,7 +91,6 @@ section {
     margin: 8rem 0 0 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 11rem;
 }
@@ -110,9 +111,46 @@ section {
     gap: 5.2rem;
 }
 
+.wrap-aside {
+    box-sizing: border-box;
+    padding: 5rem 5.8rem;
+    width: 128rem;
+    height: 20rem;
+    border-radius: 3rem;
+    background-color: var(--main-navy);
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.aside-form-input {
+    width: 53rem;
+    height: 6rem;
+    border-radius: 6rem;
+}
+
 /* footer */
 footer {
-    vertical-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer > div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.footer-a {
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: #d97652;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* text */
@@ -122,8 +160,7 @@ footer {
     font-weight: 700;
     line-height: 6rem;
 }
-.main-p {
-}
+
 .section-p1 {
     margin: 0 0 30px 0;
     width: 51rem;
@@ -146,6 +183,15 @@ footer {
     width: 74rem;
 }
 
+.aside-p1 {
+    margin: 1.8rem 0;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.aside-p2 {
+    font-size: 1.4rem;
+}
+
 /* button */
 [class$='btn'] {
     border-radius: 4rem;
@@ -153,11 +199,13 @@ footer {
     color: var(--color-white);
     font-weight: 700;
 }
+
 .header-btn,
 .main-btn {
     width: 12rem;
     height: 4rem;
 }
+
 .section-btn {
     width: 12.7rem;
     height: 4rem;
@@ -172,15 +220,22 @@ footer {
     border: 1px solid #949494;
 }
 
+.aside-form-btn {
+    width: 13.6rem;
+    height: 5rem;
+}
+
 /* image */
 .header-img-logo {
     width: 13rem;
     height: 4rem;
 }
+
 .main-img-cat {
     width: 41.5rem;
     height: 89rem;
 }
+
 .section-img-cat1 {
     width: 66rem;
     height: 39rem;
@@ -196,12 +251,22 @@ footer {
     object-fit: cover;
 }
 .section-img-cat3 {
-    width: 100%;
+    width: 100vw;
     height: 34rem;
     object-fit: cover;
     opacity: 0.6;
 }
+
+.aside-form-img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
 .footer-img-logo {
     width: 22.6rem;
     height: 7rem;
+}
+.footer-a-img {
+    width: 2.4rem;
+    height: 2.4rem;
 }
