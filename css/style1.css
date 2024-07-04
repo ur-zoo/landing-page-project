@@ -30,6 +30,7 @@ html {
 }
 
 body * {
+    box-sizing: border-box;
     font-family: 'SpoqaHanSansNeo-Regular';
     color: var(--color-black);
     font-size: 1.6rem;
@@ -50,6 +51,8 @@ main {
 
 /* header */
 header {
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,13 +65,18 @@ header {
 
 /* main */
 main {
+    overflow: hidden;
+    height: 90rem;
+    padding-top: 13rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     gap: 12.8rem;
 }
 
 /* section */
+section {
+    background-color: var(--color-white);
+}
 .wrap-article1 {
     margin: 8rem 0 12rem 0;
     display: flex;
@@ -78,7 +86,7 @@ main {
     gap: 11rem;
 }
 .wrap-article2 {
-    margin-bottom: 9rem;
+    margin-bottom: 19.6rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -95,8 +103,8 @@ main {
 .wrap-aside1 {
     position: absolute;
     z-index: 1;
-
-    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     padding: 5rem 5.8rem;
     width: 128rem;
     height: 20rem;
@@ -120,7 +128,6 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 6rem;
-    box-sizing: border-box;
 }
 .aside-form-input::placeholder {
     color: #767676;
@@ -150,6 +157,7 @@ footer > div {
 
 /* text */
 .main-h {
+    padding-top: 19rem;
     width: 73.7rem;
     font-size: 4.8rem;
     font-weight: 700;
@@ -223,18 +231,20 @@ footer > div {
     height: 4rem;
 }
 .section-btn-top {
+    position: fixed;
+    right: 2.4rem;
+    bottom: 18rem;
     width: 5rem;
     height: 5rem;
-    border-radius: 10rem;
-    border: 1px solid #eeeeee;
 }
 .section-btn-top:hover {
-    border: 1px solid #949494;
+    border-radius: 50%;
+    background-color: #767676;
 }
 
 .aside-form-btn {
     position: absolute;
-    margin: 0.5rem 38.9rem;
+    margin: 0.5rem 38.8rem;
     width: 13.6rem;
     height: 5rem;
 }
@@ -272,6 +282,7 @@ img {
     width: 100vw;
     height: 34rem;
     opacity: 0.6;
+    vertical-align: top;
 }
 
 .aside-form-img {
